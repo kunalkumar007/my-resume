@@ -13,7 +13,7 @@ export default function Header() {
         <Link href="/about">
           <p className="mx-2 cursor-pointer">About</p>
         </Link>
-        <Link href="/my-projects">
+        <Link href="/projects">
           <p className="cursor-pointer">Projects</p>
         </Link>
       </div>
