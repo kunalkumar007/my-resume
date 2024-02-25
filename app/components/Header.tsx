@@ -1,9 +1,7 @@
-import React from "react";
-import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import logo from "@/public/assets/name.png";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Header() {
   return (
@@ -15,10 +13,17 @@ export default function Header() {
         <Link href="/about">
           <p className="mx-2 cursor-pointer">About</p>
         </Link>
-        <p className="cursor-pointer">Projects</p>
+        <Link href="/my-projects">
+          <p className="cursor-pointer">Projects</p>
+        </Link>
       </div>
       <div>
-        <Image src={logo} alt="name" width={300} height={300} />
+        <Image
+          src="https://res.cloudinary.com/kunal-img/image/upload/v1708839163/my-resume%20Github%20Project%20Assets/name_n9ypvi.png"
+          alt="name"
+          width={300}
+          height={300}
+        />
       </div>
       <div className="flex items-center">
         <Link href="https://twitter.com/ambitiouskunal">

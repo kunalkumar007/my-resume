@@ -1,6 +1,5 @@
-import React from "react";
 import Image from "next/image";
-import profile from "@/public/assets/about.jpg";
+
 export default function Banner() {
   return (
     <div>
@@ -24,9 +23,10 @@ export default function Banner() {
         </div>
         <div className="flex-1 flex items-center justify-center">
           <Image
-            src={profile}
+            src="https://res.cloudinary.com/kunal-img/image/upload/v1708839166/my-resume%20Github%20Project%20Assets/about_cmd3dy.jpg"
             alt=""
             height={300}
+            width={300}
             className="border-8 border-black p-2 rounded-lg w-3/4 md:w-auto"
           />
         </div>
