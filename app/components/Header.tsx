@@ -7,13 +7,22 @@ export default function Header() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between mx-auto p-2">
       <div className="flex items-center">
-        <Link href="/">
+        <Link
+          href="/"
+          className="transition-transform transform-gpu hover:scale-110"
+        >
           <p className="cursor-pointer">Home</p>
         </Link>
-        <Link href="/about">
+        <Link
+          href="/about"
+          className="transition-transform transform-gpu hover:scale-110"
+        >
           <p className="mx-2 cursor-pointer">About</p>
         </Link>
-        <Link href="/projects">
+        <Link
+          href="/projects"
+          className="transition-transform transform-gpu hover:scale-110"
+        >
           <p className="cursor-pointer">Projects</p>
         </Link>
       </div>
@@ -26,13 +35,22 @@ export default function Header() {
         />
       </div>
       <div className="flex items-center">
-        <Link href="https://twitter.com/ambitiouskunal">
+        <Link
+          href="https://twitter.com/ambitiouskunal"
+          className="transition-transform transform-gpu hover:scale-110"
+        >
           <FaSquareXTwitter size="1.5em" className="cursor-pointer" />
         </Link>
-        <Link href="https://github.com/kunalkumar007">
+        <Link
+          href="https://github.com/kunalkumar007"
+          className="transition-transform transform-gpu hover:scale-110"
+        >
           <FaGithub size="1.5em" className="cursor-pointer mx-2" />
         </Link>
-        <Link href="https://www.linkedin.com/in/kunalkumar007">
+        <Link
+          href="https://www.linkedin.com/in/kunalkumar007"
+          className="transition-transform transform-gpu hover:scale-110"
+        >
           <FaLinkedin color="#0077B5" size="1.5em" className="cursor-pointer" />
         </Link>
       </div>
